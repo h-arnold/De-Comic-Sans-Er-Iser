@@ -6,7 +6,7 @@ function createMenu() {
   const ui = SlidesApp.getUi();
 
   ui.createMenu("De-Comic-Sans-er-iser")
-  .addItem("Make everything Comic Sans", "installTriggers")
+  .addItem("Make everything Comic Sans", "no")
   .addItem("Remove all Comic Sans", "enforceArial")
   .addItem("Remmove all Comic Sans forever!", "enforceArial")
   .addToUi()
