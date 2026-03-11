@@ -12,6 +12,11 @@ function createMenu() {
   .addToUi()
 }
 
+function no() {
+    const ui = SlidesApp.getUi()
+    ui.alert("NEVER!!!")
+}
+
 /**
  * Run this function manually from the Apps Script editor once.
  * It will prompt for authorization and schedule 12 executions,
