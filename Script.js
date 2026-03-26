@@ -8,7 +8,7 @@ function createMenu() {
   ui.createMenu("De-Comic-Sans-er-iser")
   .addItem("Make everything Comic Sans", "no")
   .addItem("Remove all Comic Sans", "enforceArial")
-  .addItem("Remmove all Comic Sans forever!", "enforceArial")
+  .addItem("Remove all Comic Sans forever!", "enforceArial")
   .addToUi()
 }
 
@@ -101,7 +101,7 @@ function checkAndReplaceFont(textRange) {
     runs.forEach(run => {
       const textStyle = run.getTextStyle();
       // Check if the current font is Comic Sans MS
-      if (textStyle.getFontFamily() === 'Comic Sans MS') {
+      if (textStyle.getFontFamily() !== 'Comic Sans MS') {
         textStyle.setFontFamily('Arial');
       }
 
